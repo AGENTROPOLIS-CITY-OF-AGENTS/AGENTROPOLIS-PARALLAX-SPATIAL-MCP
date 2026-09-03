@@ -48,6 +48,14 @@ The active WebMCP Challenge implementation lives in:
 
 During the challenge window, working runtime code remains there to avoid destabilizing the submission. After submission, reusable protocol/runtime pieces can be extracted here deliberately.
 
+## Procedural Three.js worlds
+
+Yes: PARALLAX can wrap an explorable, procedural Three.js environment without making any authoring tool a runtime dependency. The spatial scene remains the renderer and interaction surface; PARALLAX provides governed capabilities, deterministic inspection, bounded operations, before/after capture, verification, and audit receipts.
+
+A compatible world exposes `window.scene` plus recommended camera, renderer, and PARALLAX adapter handles. Doors, terminals, projected menus, props, and agent avatars request typed capabilities; they do not grant authority by being clicked.
+
+See [Procedural Three.js World Compatibility](docs/architecture/PROCEDURAL-THREEJS-COMPATIBILITY.md) for the runtime contract, evidence bundle, operation envelope, district mapping, and acceptance tests.
+
 ## Brand
 
 Public name: **PARALLAX**  
