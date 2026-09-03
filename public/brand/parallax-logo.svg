@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 240" role="img" aria-labelledby="title desc">
+  <title id="title">PARALLAX Spatial MCP</title>
+  <desc id="desc">PARALLAX emblem with cyan spatial aperture and red verification node beside the PARALLAX wordmark.</desc>
+  <rect width="920" height="240" fill="#0a0a12"/>
+  <g transform="translate(42 30)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M90 8 156 46 156 122 90 160 24 122 24 46Z" stroke="#5ee9f0" stroke-width="8"/>
+    <circle cx="90" cy="84" r="44" stroke="#5ee9f0" stroke-width="7"/>
+    <path d="M51 84h78M90 45v78M38 132 142 36" stroke="#5ee9f0" stroke-width="5" opacity=".72"/>
+    <path d="M90 84 133 102" stroke="#ee1b2e" stroke-width="7"/>
+    <circle cx="137" cy="104" r="11" fill="#ee1b2e" stroke="#0a0a12" stroke-width="4"/>
+  </g>
+  <g fill="#f2f0ea" font-family="Arial, Helvetica, sans-serif">
+    <text x="244" y="118" font-size="82" font-weight="700" letter-spacing="12">PARALLAX</text>
+    <text x="249" y="164" font-size="22" font-weight="700" letter-spacing="7" fill="#5ee9f0">SPATIAL MCP</text>
+    <text x="249" y="198" font-size="17" letter-spacing="4">SEE • ACT • SEE AGAIN • PROVE IT</text>
+  </g>
+</svg>
