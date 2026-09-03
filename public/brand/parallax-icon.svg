@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-labelledby="title desc">
+  <title id="title">PARALLAX icon</title>
+  <desc id="desc">Cyan spatial aperture with a red verification node on an obsidian field.</desc>
+  <rect width="192" height="192" rx="28" fill="#0a0a12"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M96 22 150 53 150 115 96 146 42 115 42 53Z" stroke="#5ee9f0" stroke-width="8"/>
+    <circle cx="96" cy="84" r="36" stroke="#5ee9f0" stroke-width="7"/>
+    <path d="M64 84h64M96 52v64M54 123 138 45" stroke="#5ee9f0" stroke-width="4" opacity=".72"/>
+    <path d="M96 84 132 99" stroke="#ee1b2e" stroke-width="7"/>
+    <circle cx="136" cy="101" r="10" fill="#ee1b2e" stroke="#0a0a12" stroke-width="4"/>
+  </g>
+</svg>
