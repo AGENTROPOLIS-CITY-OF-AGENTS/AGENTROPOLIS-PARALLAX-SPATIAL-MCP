@@ -1,0 +1,27 @@
+PARALLAX Spatial MCP
+Copyright 2026 AGENTROPOLIS-CITY-OF-AGENTS / project contributors.
+
+Software source and documentation source in this repository are licensed under the Apache License, Version 2.0 unless a file states otherwise.
+
+BRAND / TRADEMARK NOTICE
+
+The Apache License 2.0 does not grant permission to use project trade names, trademarks, service marks, product names, or branding except for reasonable and customary attribution and description of origin.
+
+The following are reserved project identifiers and brand assets:
+
+- PARALLAX
+- PARALLAX Spatial MCP
+- AGENTROPOLIS
+- CITY OF AGENTS
+- PARALLAX wordmarks, emblems, icons, logos, presentation artwork, and visual identity
+- AGENTROPOLIS wordmarks, emblems, icons, logos, presentation artwork, and visual identity
+
+These brand assets are original project identity and are not offered for independent rebranding, endorsement, or confusingly similar product presentation under the Apache-2.0 software license.
+
+Reference and attribution uses should clearly identify the project as the source and should not imply endorsement, partnership, certification, or official status that has not been granted.
+
+CORE PROJECT INVARIANT
+
+Generated != Verified.
+
+PARALLAX documentation and demonstrations must distinguish implemented capability, verified capability, experimental capability, unavailable runtime capability, and planned capability. Browser-native WebMCP availability must never be inferred from a fallback demonstration.
