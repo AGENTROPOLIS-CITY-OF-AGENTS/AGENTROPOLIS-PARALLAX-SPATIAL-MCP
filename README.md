@@ -40,13 +40,34 @@ PARALLAX is designed as a reusable protocol/product layer for spatial agent oper
 
 PARALLAX does **not** claim that every browser currently exposes native WebMCP APIs, nor that the current deterministic verifier is general visual intelligence. Runtime availability and verifier capability must be reported honestly per environment.
 
+## Runtime package
+
+The reusable TypeScript runtime now lives in [`src/runtime`](src/runtime). It provides:
+
+- typed world graphs and spatial objects
+- per-object capability enforcement
+- immutable, bounded scene mutations
+- content-addressed capture artifacts
+- capture-binding verification
+- the mutation -> capture -> verify -> receipt corridor
+- framework-neutral spatial tool adapters
+
+Install dependencies and run the complete local quality gate:
+
+```bash
+npm install
+npm run quality
+```
+
+The initial package was extracted and generalized from the working WebMCP Challenge implementation. Challenge-specific UI and submission code remain in that repository. See [`NOTICE-EXTRACTION.md`](NOTICE-EXTRACTION.md).
+
 ## Reference implementation
 
 The active WebMCP Challenge implementation lives in:
 
 **[AGENTROPOLIS-WEBMCP-CHALLENGE](https://github.com/AGENTROPOLIS-CITY-OF-AGENTS/AGENTROPOLIS-WEBMCP-CHALLENGE)**
 
-During the challenge window, working runtime code remains there to avoid destabilizing the submission. After submission, reusable protocol/runtime pieces can be extracted here deliberately.
+The challenge repository remains the canonical home for the complete submission application and spatial studio demonstration. Reusable framework-neutral runtime pieces are maintained here.
 
 ## Procedural Three.js worlds
 
@@ -87,7 +108,7 @@ For now this repository is the canonical home for:
 - PARALLAX product identity and brand canon
 - protocol architecture and vocabulary
 - verification and receipt principles
-- future reusable SDK/runtime extraction
+- reusable SDK/runtime implementation
 - examples and implementation guidance
 
 The challenge repo remains the canonical home for the current submission implementation until the challenge is complete.
