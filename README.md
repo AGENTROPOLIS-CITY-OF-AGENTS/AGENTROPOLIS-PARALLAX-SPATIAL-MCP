@@ -56,6 +56,14 @@ A compatible world exposes `window.scene` plus recommended camera, renderer, and
 
 See [Procedural Three.js World Compatibility](docs/architecture/PROCEDURAL-THREEJS-COMPATIBILITY.md) for the runtime contract, evidence bundle, operation envelope, district mapping, and acceptance tests.
 
+## MiniMax H3 handmade reconstruction
+
+PARALLAX now exposes the typed browser capability `parallax.video.handmade-reconstruction`. It compiles the governed 15-second reference-image construction prompt and issues a fail-closed verification receipt covering maker consistency, hand count, subject continuity, causal assembly, reference match, final reveal, and text overlays.
+
+The compiler does not call a provider or infer image rights. Provider execution remains behind an independently authorized adapter.
+
+See [H3 Handmade Reconstruction](docs/architecture/H3-HANDMADE-RECONSTRUCTION.md) and [the browser adapter](public/parallax-h3-reconstruction.js).
+
 ## Brand
 
 Public name: **PARALLAX**  
