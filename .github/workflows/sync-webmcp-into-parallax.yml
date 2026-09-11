@@ -1,0 +1,60 @@
+name: Import WebMCP Challenge into PARALLAX
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths:
+      - ".github/workflows/sync-webmcp-into-parallax.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: parallax-webmcp-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PARALLAX
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Clone WebMCP source
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/webmcp
+          git clone --depth 1 https://github.com/AGENTROPOLIS-CITY-OF-AGENTS/AGENTROPOLIS-WEBMCP-CHALLENGE.git /tmp/webmcp
+          SOURCE_SHA="$(git -C /tmp/webmcp rev-parse HEAD)"
+          echo "SOURCE_SHA=$SOURCE_SHA" >> "$GITHUB_ENV"
+
+      - name: Vendor source into PARALLAX
+        run: |
+          set -euo pipefail
+          mkdir -p apps/webmcp-challenge
+          rsync -a --delete --exclude='.git/' /tmp/webmcp/ apps/webmcp-challenge/
+          cat > apps/webmcp-challenge/PARALLAX-IMPORT.json <<EOF
+          {
+            "source_repository": "AGENTROPOLIS-CITY-OF-AGENTS/AGENTROPOLIS-WEBMCP-CHALLENGE",
+            "source_commit": "${SOURCE_SHA}",
+            "import_target": "apps/webmcp-challenge",
+            "canonical_parent": "AGENTROPOLIS-CITY-OF-AGENTS/AGENTROPOLIS-PARALLAX-SPATIAL-MCP",
+            "mode": "vendored-source-snapshot"
+          }
+          EOF
+
+      - name: Commit imported snapshot
+        run: |
+          set -euo pipefail
+          git config user.name "agentropolis-sync"
+          git config user.email "actions@users.noreply.github.com"
+          git add apps/webmcp-challenge
+          if git diff --cached --quiet; then
+            echo "No WebMCP changes to import."
+            exit 0
+          fi
+          git commit -m "feat: clone WebMCP challenge into PARALLAX [skip ci]"
+          git push origin HEAD:main
