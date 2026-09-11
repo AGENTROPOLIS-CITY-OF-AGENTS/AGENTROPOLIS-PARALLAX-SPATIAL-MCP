@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-08-29",
+  "owner": "Creator / Construction",
+  "districts": {
+    "all": [
+      "orbit.integrations",
+      "motion.perspective-marquee",
+      "loader.assembly-cube"
+    ],
+    "hermes": [
+      "spatial.poem-cube"
+    ],
+    "district-scenes": [
+      "spatial.poem-cube"
+    ],
+    "atc": [
+      "shader.atc"
+    ],
+    "world-scenes": [
+      "shader.atc"
+    ],
+    "forge": [
+      "action.energy-cta"
+    ],
+    "gateway": [
+      "action.energy-cta",
+      "integration.constellation"
+    ],
+    "vault": [
+      "receipt.tool-calls",
+      "gallery.stellar",
+      "gallery.folder",
+      "receipt.execution-receipt"
+    ],
+    "media": [
+      "gallery.stellar",
+      "gallery.sphere"
+    ],
+    "archives": [
+      "gallery.folder"
+    ],
+    "identity": [
+      "gallery.sphere",
+      "agent.credential"
+    ],
+    "mission-control": [
+      "receipt.execution-receipt",
+      "integration.constellation"
+    ],
+    "hermes-city": [
+      "agent.credential",
+      "integration.constellation"
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+[
+  {
+    "id": "orbit.integrations",
+    "name": "Orbit Integrations",
+    "category": "navigation",
+    "maturity": "reviewed",
+    "runtime": "DOM",
+    "gpuRequired": false
+  },
+  {
+    "id": "spatial.poem-cube",
+    "name": "Spatial Poem Cube",
+    "category": "spatial",
+    "maturity": "quarantine",
+    "runtime": "Three.js",
+    "gpuRequired": true
+  },
+  {
+    "id": "motion.perspective-marquee",
+    "name": "Perspective Marquee",
+    "category": "motion",
+    "maturity": "quarantine",
+    "runtime": "CSS",
+    "gpuRequired": false
+  },
+  {
+    "id": "shader.atc",
+    "name": "ATC Shader Panel",
+    "category": "shaders",
+    "maturity": "quarantine",
+    "runtime": "WebGL/WebGL2",
+    "gpuRequired": true
+  },
+  {
+    "id": "action.energy-cta",
+    "name": "Energy CTA",
+    "category": "action",
+    "maturity": "reviewed",
+    "runtime": "DOM",
+    "gpuRequired": false
+  },
+  {
+    "id": "loader.assembly-cube",
+    "name": "Assembly Cube Loader",
+    "category": "loaders",
+    "maturity": "quarantine",
+    "runtime": "CSS",
+    "gpuRequired": false
+  },
+  {
+    "id": "receipt.tool-calls",
+    "name": "Tool Calls Section",
+    "category": "tool-ui",
+    "maturity": "reviewed",
+    "runtime": "DOM",
+    "gpuRequired": false
+  },
+  {
+    "id": "gallery.stellar",
+    "name": "Stellar Gallery",
+    "category": "galleries",
+    "maturity": "quarantine",
+    "runtime": "DOM",
+    "gpuRequired": false
+  },
+  {
+    "id": "gallery.folder",
+    "name": "Folder Gallery",
+    "category": "galleries",
+    "maturity": "quarantine",
+    "runtime": "DOM",
+    "gpuRequired": false
+  },
+  {
+    "id": "gallery.sphere",
+    "name": "Sphere Image Grid",
+    "category": "galleries",
+    "maturity": "quarantine",
+    "runtime": "DOM",
+    "gpuRequired": false
+  },
+  {
+    "id": "receipt.execution-receipt",
+    "name": "Execution Receipt",
+    "category": "tool-ui",
+    "maturity": "reviewed",
+    "runtime": "DOM",
+    "gpuRequired": false
+  },
+  {
+    "id": "agent.credential",
+    "name": "Agent Credential",
+    "category": "tool-ui",
+    "maturity": "reviewed",
+    "runtime": "DOM",
+    "gpuRequired": false
+  },
+  {
+    "id": "integration.constellation",
+    "name": "Integration Constellation",
+    "category": "navigation",
+    "maturity": "reviewed",
+    "runtime": "DOM",
+    "gpuRequired": false
+  }
+]

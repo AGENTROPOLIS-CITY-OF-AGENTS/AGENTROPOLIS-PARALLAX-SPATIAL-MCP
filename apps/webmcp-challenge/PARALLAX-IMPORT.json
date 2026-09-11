@@ -1,0 +1,7 @@
+{
+  "source_repository": "AGENTROPOLIS-CITY-OF-AGENTS/AGENTROPOLIS-WEBMCP-CHALLENGE",
+  "source_commit": "0fb521c350a0f8202680d787396b5ff8a47c054e",
+  "import_target": "apps/webmcp-challenge",
+  "canonical_parent": "AGENTROPOLIS-CITY-OF-AGENTS/AGENTROPOLIS-PARALLAX-SPATIAL-MCP",
+  "mode": "vendored-source-snapshot"
+}
