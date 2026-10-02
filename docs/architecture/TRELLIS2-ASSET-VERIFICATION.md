@@ -56,3 +56,28 @@ For browser/mobile consumers, prefer explicit LODs, compressed textures, and com
 ## Canon line
 
 > TRELLIS.2 generates the candidate. PARALLAX proves what entered the scene and what changed.
+
+
+## Production review lattice
+
+- **Devin** implements adapters/tests, resolves CI failures, and records exact build/commit evidence.
+- **GrokBot** attacks visual fit, gameplay integration, LOD/material/collision assumptions, and runtime regressions.
+- **VERITY** independently verifies source commit, evidence hashes, authority boundaries, benchmark claims, rollback, and promotion-gate integrity.
+- **Hermes** orchestrates execution, continuity, retries, cross-repo dependency order, and receipt aggregation.
+
+The executor that changes the asset or scene must not self-certify production readiness.
+
+## Promotion gate
+
+A TRELLIS.2-derived asset remains non-production until:
+
+1. source rights/provenance are bound,
+2. master and runtime derivative hashes are recorded,
+3. target-runtime profile is explicit,
+4. import/material/collision/LOD checks pass,
+5. renderer health and cleanup checks pass,
+6. performance evidence exists for the target profile,
+7. rollback/replacement path exists,
+8. independent VERITY review passes.
+
+**Generated != Imported != Verified != Production.**
