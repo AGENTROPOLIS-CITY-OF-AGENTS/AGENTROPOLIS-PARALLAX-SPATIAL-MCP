@@ -8,7 +8,8 @@
     "build": "tsc -p tsconfig.json",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "quality": "npm run typecheck && npm test && npm run build"
+    "prepare:webmcp": "npm --prefix apps/webmcp-challenge ci",
+    "quality": "npm run prepare:webmcp && npm run typecheck && npm test && npm run build"
   },
   "devDependencies": {
     "typescript": "^5.9.2",
